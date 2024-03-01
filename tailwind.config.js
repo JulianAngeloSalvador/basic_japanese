@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
+const defaultTheme = require("tailwindcss/defaultTheme");
 const { createThemes } = require("tw-colors");
 
 export default {
@@ -8,6 +8,10 @@ export default {
     extend: {
       fontSize: {
         headline: "calc()",
+      },
+      fontFamily: {
+        lexend: ["Lexend", ...defaultTheme.fontFamily.sans],
+        raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         ctaGreen: "#31E981",
