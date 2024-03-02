@@ -10,8 +10,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer utilities {
+  .guide1 {
+    @apply outline outline-2 outline-teal-800;
+  }
+  .guide2 {
+    @apply outline outline-2 outline-red-800;
+  }
+}
+
 @layer base {
   :root {
     @apply font-raleway;
+  }
+
+  @font-face {
+    font-family: "Lexend";
+    font-weight: 500;
+    src: url("../fonts/lexend-latin-500-normal.woff2");
+  }
+  @font-face {
+    font-family: "Lexend";
+    font-weight: 800;
+    src: url("../fonts/lexend-latin-800-normal.woff2");
+  }
+  @font-face {
+    font-family: "Raleway";
+    font-weight: 300;
+    src: url("../fonts/raleway-latin-300-normal.woff2");
+  }
+  @font-face {
+    font-family: "Raleway";
+    font-weight: 600;
+    src: url("../fonts/raleway-latin-600-normal.woff2");
+  }
+  @font-face {
+    font-family: "Raleway";
+    font-weight: 900;
+    src: url("../fonts/raleway-latin-900-normal.woff2");
   }
 }
