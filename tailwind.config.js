@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 const { createThemes } = require("tw-colors");
+const plugin = require("tailwindcss/plugin");
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -27,6 +28,8 @@ export default {
         raleway: ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        "light-theme": "#FFEEDB",
+        cta: "#549F93",
         ctaGreen: "#31E981",
         ctaGreen2: "#20BF55",
         ctaBlue: "#A3BCF9",
@@ -50,14 +53,18 @@ export default {
     },
   },
   plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("hocus", ["&:hover", "&:focus"]);
+      addVariant("children", "& > *");
+    }),
     createThemes({
       dark: {
-        primary: "#395C6B",
+        primary: "#293B5F",
         secondary: "#FFEEDB",
       },
       light: {
         primary: "#FFEEDB",
-        secondary: "#395C6B",
+        secondary: "#293B5F",
       },
     }),
   ],
