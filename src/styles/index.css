@@ -21,7 +21,7 @@
 
 @layer base {
   :root {
-    @apply font-raleway;
+    @apply font-raleway font-600 bg-primary text-secondary;
   }
 
   @font-face {
