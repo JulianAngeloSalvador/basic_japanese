@@ -17,11 +17,15 @@
   .guide2 {
     @apply outline outline-2 outline-red-800;
   }
+
+  .text-headline {
+    @apply leading-[1.25];
+  }
 }
 
 @layer base {
   :root {
-    @apply font-raleway font-600 bg-primary text-secondary selection:bg-secondary/25;
+    @apply font-raleway font-600 bg-primary text-secondary selection:bg-neutral-500/25 2xl:text-[1.2rem];
   }
 
   @font-face {
