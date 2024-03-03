@@ -29,7 +29,7 @@ export default {
       },
       colors: {
         "light-theme": "#FFEEDB",
-        cta: "#549F93",
+        cta: "#439775",
         ctaGreen: "#31E981",
         ctaGreen2: "#20BF55",
         ctaBlue: "#A3BCF9",
@@ -59,12 +59,12 @@ export default {
     }),
     createThemes({
       dark: {
-        primary: "#293B5F",
+        primary: "#011627",
         secondary: "#FFEEDB",
       },
       light: {
         primary: "#FFEEDB",
-        secondary: "#293B5F",
+        secondary: "#011627",
       },
     }),
   ],
